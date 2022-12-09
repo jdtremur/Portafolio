@@ -74,6 +74,8 @@
     }
     .formacion_academia{
         gap: 16px;
+        align-items: flex-start;
+        width: auto;
     }
     .academia_logo{
         width: 12rem;

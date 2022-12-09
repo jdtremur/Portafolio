@@ -1,0 +1,13 @@
+.encabezado_nombre{
+    font-family: 'Relawey';
+    padding: 0 1rem;
+    color: #393939;
+}
+@media screen and (max-width: 415px) {
+    .encabezado_nombre{
+        font-size: 16px;
+        line-height: 19px;
+        padding: 0px;
+        color: #464646;
+    }
+}

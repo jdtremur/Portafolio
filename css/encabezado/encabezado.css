@@ -1,0 +1,20 @@
+.encabezado{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 88px;
+    padding: 2rem 5rem;
+}
+@media screen and (max-width: 1024) and (min-width: 768px) {
+    .encabezado{
+        padding: 16px;
+        flex-direction: row;
+    }
+}
+@media screen and (max-width: 767) and (min-width: 360px) {
+    .encabezado{
+        padding: 16px;
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,13 @@
+.skills_hobbies{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    gap: 88px;
+    margin: 1rem 0;
+}
+@media screen and (max-width: 415px) {
+    .skills_hobbies{
+        gap: 32px;
+    }
+}

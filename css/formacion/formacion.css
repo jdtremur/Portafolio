@@ -1,0 +1,97 @@
+.formacion{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    gap: 32px;
+    background: #c3d0e2;
+}
+.formacion_titulo{
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-style: normal;
+    font-size: 32px;
+    line-height: 38px;
+    text-align: center;
+    color: #464646;
+}
+.formacion_academias{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 16px;
+
+}
+.formacion_academia{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: calc(41% - 82px);
+    height: 40%;
+    gap: 16px;
+}
+.formacion_academias:nth-child(2).acedemia_img{
+    height: 40%;
+}
+.acedemia_img{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+    gap: 10px;
+    background: #FFFFFF;
+}
+.academia_logo{
+    width: calc(100% - 16px);
+    height: 50%;
+}
+.academia_nombre{
+    padding: 0px 16px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 26px;
+    color: #464646;
+    margin: 0px;
+}
+.academia_año{
+    padding: 0px 16px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #464646;
+    margin: 0px;
+}
+@media screen and (max-width: 768px) {
+    .formacion{
+        padding: 32px;
+        gap: 32px;
+    }
+    .formacion_academia{
+        gap: 16px;
+    }
+    .academia_logo{
+        width: 12rem;
+        height: 8rem;
+    }
+    .acedemia_img{
+        height: 5rem;
+        background: none;
+    }
+    .academia_nombre{
+        margin: 0px;
+    }
+    .academia_año{
+        margin: 0px;
+    }
+}
+@media screen and (max-width: 415px) {
+    .formacion_academias{
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,33 @@
+.encabezado_logo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.encabezado_logo__dibujado{
+    font-family: 'Cherish', cursive;
+    background: #ffffff;
+    padding:  1rem 1rem;
+    width: 40px;
+    height: 20px;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: bold;
+    box-shadow: 1px 1px 1em #ffffff;
+    transition: 1s;
+}
+.encabezado_logo__dibujado:hover{
+    transform: scale(1.1);
+    background: #110350;
+    color: #ffffff;
+}
+@media screen and (min-width: 360px) {
+    .encabezado_logo__dibujado{
+        width: 20px;
+        height: 10px;
+        padding: 0.5rem 0.5rem;
+    }
+    .encabezado_logo{
+        justify-content: space-between;
+        gap: 16px;
+    }
+}

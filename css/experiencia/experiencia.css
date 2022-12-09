@@ -1,0 +1,148 @@
+.Experiencia{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5rem 0 2rem 0 ;
+    gap: 32px;
+}
+.experiencia_titulo{
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 38px;
+    color: #464646;
+}
+.experiencia_area{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 64px;
+}
+.experiencia_area__evidencia{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0;
+    gap: 16px;
+}
+.evidencia_img{
+   width: 752px;
+   height: 406px; 
+   box-shadow: 1px 1px 10px #464646;
+}
+.evidencia_repositorio{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 8px;
+}
+.repositorio_nombre{
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-style: normal;
+    font-size: 22px;
+    line-height: 26px;
+    color: #464646;
+}
+.repositorio_challenge{
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #464646;
+}
+.repositorio_botones{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 16px;
+    padding: 0px;
+}
+.boton_link{
+    text-decoration: none;
+}
+.boton1{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+    gap: 16px;
+    border: 1px solid #2A7AE4;
+    transition: 1s;
+}
+.boton1:hover{
+    transform: scale(1.1);
+}
+.boton1_mombre{
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #2A7AE4;
+}
+.boton2{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+    gap: 10px;
+    background: #2A7AE4;
+    border: none;
+    transition: 1s;
+}
+.boton2:hover{
+    transform: scale(1.1);
+    background: #bdac11;
+}
+.boton2_nombre{
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+}
+@media screen and (max-width: 768px) {
+    .Experiencia{
+        padding: 32px;
+    }
+    .experiencia_area__evidencia{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .experiencia_area__evidencia:nth-child(2){
+        flex-direction: column-reverse;
+    }
+    .experiencia_area__evidencia:nth-child(4){
+        flex-direction: column-reverse;
+    }
+    .evidencia_img{
+        width: 704px;
+        height: 320px;
+    }
+}
+@media screen and (max-width: 415px) {
+    .evidencia_img{
+        width: 22rem;
+        height: 11rem;
+    }
+    .repositorio_nombre{
+        margin: 0px;
+    }
+    .repositorio_challenge{
+        margin: 0px;
+    }
+    .boton1{
+        padding: 1px;
+    }
+    .boton2{
+        padding: 1px;
+    }
+}

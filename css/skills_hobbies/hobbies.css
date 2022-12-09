@@ -1,0 +1,80 @@
+.hobbies{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    gap: 32px;
+}
+.hobbies_titulo{
+    font-family: 'Raleway';
+    font-style: normal;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 38px;
+    text-align: center;
+    color: #464646;
+    width: 82px;
+    height: 38px;
+}
+.hobbies_logos{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+.hobbi{
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 16px;
+    gap: 8px;
+    background: #c9c6cf;
+    width: 10rem;
+    height: 13rem;
+    border-radius: 3px;
+    transition: 1s;
+}
+.hobbi:hover{
+    transform: scale(1.1);
+    box-shadow: 1px 1px 10px #464646;
+}
+.hobbi_logos__logo{
+    width: 32px;
+    height: 32px;
+}
+.logo_nombre{
+    font-family: 'Raleway';
+    font-style: normal;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19px;
+    text-align: center;
+    color: #464646;
+    display: flex;
+    align-items: center;
+    width: 144px;
+    height: 19px;
+}
+@media screen and (max-width: 768px) {
+    .hobbies_logos{
+        padding: 2rem;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .hobbies_titulo{
+        font-size: 22px;
+        line-height: 26px;
+    }
+}
+@media screen and (min-width: 360px) {
+    .hobbies{
+        gap: 0px;
+    }
+    .hobbi{
+        width: 8rem;
+        height: 7rem;
+    }
+}

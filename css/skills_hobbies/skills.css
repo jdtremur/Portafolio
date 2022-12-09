@@ -1,0 +1,79 @@
+.skills{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    gap: 32px;
+}
+.skills_titulo{
+    width: 82px;
+    height: 38px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 38px;
+    text-align: center;
+    color: #464646;
+}
+.skills_logos{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+.skill{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    padding: 16px;
+    gap: 8px;
+    background: #c9c6cf;
+    width: 10rem;
+    height: 13rem;
+    border-radius: 3px;
+    transition: 1s;
+}
+.skill:hover{
+    transform: scale(1.1);
+    box-shadow: 1px 1px 10px #464646;
+   }
+.skills_logos__logo{
+    width: 24px;
+    height: 24px;
+}
+.skills_logos__nombre{
+    width: 144px;
+    height: 19px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+    color: #464646;
+}
+@media screen and (max-width: 768px) {
+    .skills_logos{
+        padding: 2rem;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .skills_titulo{
+        font-size: 22px;
+        line-height: 26px;
+    }
+}
+@media screen and (min-width: 360px) {
+    .skills{
+        gap: 0px;
+    }
+    .skill{
+        width: 8rem;
+        height: 7rem;
+    }
+}

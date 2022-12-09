@@ -1,0 +1,16 @@
+.quien_soy{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    margin: 0 5rem;
+}
+@media screen and (max-width: 415px) {
+    .quien_soy{
+        flex-direction: column-reverse;
+        align-items: flex-start;
+        margin: 0px;
+        padding: 16px;
+    }
+}
